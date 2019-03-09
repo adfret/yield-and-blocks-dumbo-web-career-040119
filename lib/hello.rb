@@ -1,4 +1,5 @@
 def hello_t(array=["Tim", "Tom", "Jim"])
+if block_given?
   i = 0
 
   while i < array.length
@@ -6,6 +7,9 @@ def hello_t(array=["Tim", "Tom", "Jim"])
     i+=1
   end
 array
+else
+  puts "No block was given."
+end
 end
 
 # call your method here!
